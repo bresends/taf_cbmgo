@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+    @apply bg-gray-900 text-zinc-50;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.blue {
+    color: rgb(0, 177, 253);
+}
+
+.dark-blue{
+    color: rgb(20, 65, 80);
+}
