@@ -122,7 +122,7 @@ export function Form({ data, setData }: FormProps) {
               <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-6">
                   <Input
-                    label="Natação (seg)"
+                    label="Natação (segundos)"
                     min={20}
                     max={3300}
                     {...{ data, setData }}
