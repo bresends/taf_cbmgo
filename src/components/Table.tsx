@@ -28,7 +28,7 @@ export function Table({ showTable, data }: TableProps) {
     showTable && (
       <div className="relative mt-12 overflow-x-auto rounded-md">
         <table className="w-full text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
-          <thead className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+          <thead className="bg-gray-300 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Exercício
@@ -86,7 +86,7 @@ export function Table({ showTable, data }: TableProps) {
             </tr>
           </tbody>
           <tfoot>
-            <tr className="bg-gray-50 text-xs font-semibold text-gray-900 dark:bg-gray-700  dark:text-white">
+            <tr className="bg-gray-200 font-semibold text-gray-900 dark:bg-gray-700  dark:text-white">
               <th scope="row" className="px-6 py-3 text-base">
                 Média
               </th>
