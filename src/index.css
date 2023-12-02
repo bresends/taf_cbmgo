@@ -4,18 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .dark {
     @apply bg-gray-900 text-zinc-50;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
+@layer utilities {
+    .h-dvh {
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
 }
 
 .blue {
     color: rgb(0, 177, 253);
 }
 
-.dark-blue{
+.dark-blue {
     color: rgb(20, 65, 80);
 }
