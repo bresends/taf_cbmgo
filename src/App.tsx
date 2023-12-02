@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
 import { useState } from 'react';
-import { Form } from './components/Form';
+import { Card } from './components/Card';
 import { Nav } from './components/Nav';
 
 export interface Data {
@@ -23,6 +23,7 @@ function App() {
         barras: { value: 0, score: 0 },
     });
 
+
     return (
         <div
             className={clsx(
@@ -31,7 +32,7 @@ function App() {
             )}
         >
             <Nav dark={darkMode} setDark={setDarkMode} />
-            <Form {...{ data, setData }} />
+            <Card  />
             <footer className="text-gray-500 dark:border-gray-800 mt-auto py-5 flex">
                 <span className="mx-auto">
                     ©Devisio {new Date().getFullYear()}
