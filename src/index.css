@@ -18,11 +18,3 @@ body {
         min-height: 100dvh;
     }
 }
-
-.blue {
-    color: rgb(0, 177, 253);
-}
-
-.dark-blue {
-    color: rgb(20, 65, 80);
-}
