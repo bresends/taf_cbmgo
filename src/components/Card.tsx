@@ -49,6 +49,7 @@ export function Card() {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm<scoresFormData>({
     resolver: zodResolver(scoreSchema),
@@ -251,7 +252,9 @@ export function Card() {
                   className="text-zinc-900 dark:text-zinc-100"
                   htmlFor="pullUps"
                 >
-                  Barra Fixa (repetições)
+                  {watch("sex") !== "Feminino"
+                    ? "Barra Fixa (repetições)"
+                    : "Isometria (segundos)"}
                 </label>
                 <input
                   type="number"
@@ -269,7 +272,7 @@ export function Card() {
             <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
               <div className="sm:col-span-3">
                 <label className="text-zinc-900 dark:text-zinc-100" htmlFor="">
-                  Flexão de Braço (repetições)
+                  Flexão no solo (repetições)
                 </label>
                 <input
                   type="number"
@@ -309,7 +312,9 @@ export function Card() {
                   className="text-zinc-900 dark:text-zinc-100"
                   htmlFor="pullUps"
                 >
-                  Natação (segundos)
+                  {watch("staff") !== "QOS"
+                    ? "Natação de 50 metros (segundos)"
+                    : "Natação de 25 metros (segundos)"}
                 </label>
                 <input
                   type="number"
